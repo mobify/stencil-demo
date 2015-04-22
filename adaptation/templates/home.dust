@@ -14,6 +14,10 @@
             <option value="4">Option 4</option>
         {/c-select}
     </div>
+
+    <p>
+        {@c-rating-scale ratingTotal=75 /}
+    </p>
 {/contentBlock}
 
 {<uiScripts}
