@@ -2,14 +2,14 @@
 require(
     [
         'view-scripts/global',
-        'view-scripts/home'
-
+        'view-scripts/home',
+        'stencil-ui',
         // Add additional UI scripts here
     ],
     function(
         globalUI,
-
-        home
+        home,
+        stencilUI
     ) {
         globalUI();
     },
