@@ -1,0 +1,4 @@
+<div class="c-rating-scale">
+    <span class="c-rating-scale__stars" style="width: {ratingTotal}%;"></span>
+    <span class="u-visually-hidden">{ratingTotal}% rating</span>
+</div>

@@ -1,0 +1,131 @@
+
+// Arrange
+// ===
+//
+// Arrange and align a row of items with a lot of control. Provides a
+// declarative, robust cross-browser way of using flexbox.
+//
+// Example markup:
+//
+// <div class="c-arrange c--align-middle c--gutters">
+//     <div class="c-arrange__item">…</div>
+//     <div class="c-arrange__item u-width-1of2">…</div>
+//     <div class="c-arrange__item c--shrink">…</div>
+// </div>
+//
+// Attribution:
+//
+// - https://github.com/suitcss/components-arrange/
+
+
+// Configurable variables
+// ---
+
+$arrange__h-gutter: if( variable-exists(h-space), $h-space, 21px ) !default;
+
+
+// Arrange root
+// ---
+//
+// 1. Remove default styles present on common root elements.
+
+.c-arrange {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+// Arrange Item
+// ---
+//
+// 1. Ensure inline elements are treated as block-level.
+// 2. Prevent width collapsing in old implementations.
+
+.c-arrange__item {
+    display: block; // 1
+    flex: 1;
+    width: 100%; // 2
+}
+
+
+// Modifiers: vertical alignment
+// ---
+
+.c-arrange.c--align-top {
+    align-items: flex-start;
+}
+
+.c-arrange.c--align-middle {
+    align-items: center;
+}
+
+.c-arrange.c--align-bottom {
+    align-items: flex-end;
+}
+
+
+// Horizontal alignment
+
+.c-arrange.c--justify-start {
+    justify-content: flex-start;
+}
+
+.c-arrange.c--justify-end {
+    justify-content: flex-end;
+}
+
+.c-arrange.c--justify-between {
+    justify-content: space-between;
+}
+
+.c-arrange.c--justify-center {
+    justify-content: center;
+}
+
+.c-arrange.c--justify-around {
+    justify-content: space-around;
+}
+
+
+// Item modifier: shrink
+// ---
+//
+// Shrink Arrange items to a minimum size.
+//
+// 1. Ensure width collapses in old implementations.
+
+.c-arrange__item.c--shrink {
+    flex: initial;
+    width: auto; // 1
+}
+
+
+// Item modifiers: display order
+// ---
+//
+// Re-arrange the display order of up to six items. Add additional modifiers in
+// your own stylesheet to re-order more.
+
+.c-arrange__item.c--order-1 { order: 1; }
+.c-arrange__item.c--order-2 { order: 2; }
+.c-arrange__item.c--order-3 { order: 3; }
+.c-arrange__item.c--order-4 { order: 4; }
+.c-arrange__item.c--order-5 { order: 5; }
+.c-arrange__item.c--order-6 { order: 6; }
+
+
+// Modifier: gutters
+//
+// Add standard horizontal space between items.
+
+.c-arrange.c--gutters {
+    margin-right: ($arrange__h-gutter * -0.5);
+    margin-left: ($arrange__h-gutter * -0.5);
+}
+
+.c-arrange.c--gutters > .c-arrange__item {
+    margin: 0 ($arrange__h-gutter * 0.5);
+}

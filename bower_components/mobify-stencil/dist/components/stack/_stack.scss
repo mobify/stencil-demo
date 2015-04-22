@@ -1,0 +1,70 @@
+
+// Stack
+// ===
+//
+// A vertical set of items separated by space with optional dividers.
+//
+
+
+// Configurable Variables
+// ---
+
+$stack__gutter: if(variable-exists(v-space), $v-space, 10px) !default;
+$stack__border: if(variable-exists(border), $border, 1px solid hsl(0, 0%, 80%)) !default;
+
+
+// Stack root
+// ---
+
+.c-stack {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+// Stack item
+// ---
+
+.c-stack__item {
+    display: block;
+    padding-top: $stack__gutter;
+    padding-bottom: $stack__gutter;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+
+// Modifier: ruled
+// ---
+//
+// Adds horizontal rules (borders) between the items.
+
+.c-stack.c--ruled > .c-stack__item {
+    border-top: $stack__border;
+
+    &:first-child {
+        border-top-width: 0;
+    }
+}
+
+
+// Modifier: bordered
+// ---
+//
+// Adds outer borders around the entire stack.
+
+.c-stack.c--bordered {
+    border: $stack__border;
+}
+
+.c-stack.c--bordered > .c-stack__item {
+    padding: $stack__gutter;
+}

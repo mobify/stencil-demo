@@ -1,0 +1,64 @@
+// Ratio
+// ===
+//
+// Fluid-width element with an intrinsic width/height ratio. Create custom
+// ratios by defining additional modifiers.
+
+
+// Ratio root
+// ---
+//
+// 1. The aspect-ratio hack is applied to a pseudo-element because it allows
+//    the component to accept `min/max-height`.
+// 2. The ratio is 1 × 1 by default.
+
+.c-ratio {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    &::before { // 1
+        content: '';
+
+        display: block;
+        width: 100%;
+        padding-bottom: 100%; // 2
+    }
+}
+
+
+// Ratio item
+// ---
+//
+// Should be the sole child of a Ratio container.
+//
+// TODO: There are issues in iOS when placing <iframe> or <object> elements
+// within a ratio component. Solutions depend on context, but we need a good
+// one, at least for iframes.
+
+.c-ratio__item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+
+// Modifier: 4 × 3 ratio
+// ---
+
+.c-ratio.c--4by3::before {
+    padding-bottom: 75%;
+}
+
+
+// Modifier: 16 × 9 ratio
+// ---
+
+.c-ratio.c--16by9::before {
+    padding-bottom: 56.25%;
+}
