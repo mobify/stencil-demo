@@ -4,8 +4,6 @@ define(function(require) {
 
       dust.helpers.component = function component(chunk, context, bodies, params) {
 
-        debugger;
-
         // The component name is required to load and render the template.
         if (!params.is) {
           return chunk;
