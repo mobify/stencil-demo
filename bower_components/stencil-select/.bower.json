@@ -38,14 +38,13 @@
     "text": "^2.0.0"
   },
   "homepage": "https://github.com/mobify/stencil-select",
-  "_release": "56be11dee6",
+  "_release": "845d6dc5b8",
   "_resolution": {
     "type": "branch",
     "branch": "dev",
-    "commit": "56be11dee67463053dcf2d02d017c18feff4c68e"
+    "commit": "845d6dc5b8e920eda9e7ebe21b3c2ca7e943ec24"
   },
   "_source": "git://github.com/mobify/stencil-select.git",
   "_target": "dev",
-  "_originalSource": "mobify/stencil-select",
-  "_direct": true
+  "_originalSource": "mobify/stencil-select"
 }
