@@ -1,0 +1,48 @@
+// Rating Scale
+// ===
+//
+
+// Dependencies
+// ---
+
+@import 'stencil-variables/src/style';
+@import 'mobify-stencil/dist/utils/visibility/visibility';
+
+// Configurable Variables
+// ---
+
+// These values are based on the png sprite and star size
+$rating-scale__height: 12px !default;
+$rating-scale__width: 60px !default;
+
+// A path for the image
+$rating-scale__img-path: '/assets/sprite-review-stars@2x.png' !default;
+
+// Rating Scale Root
+// ---
+
+.c-rating-scale {
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+
+    display: inline-block;
+    width: $rating-scale__width;
+    height: $rating-scale__height;
+
+    background: url($rating-scale__img-path) repeat-x;
+    background-position: 0 0;
+    background-size: $rating-scale__height;
+}
+
+// Rating Scale Stars
+// ---
+
+.c-rating-scale__stars {
+    display: block;
+    height: $rating-scale__height;
+
+    background: url($rating-scale__img-path) repeat-x;
+    background-position: 0 (-$rating-scale__height);
+    background-size: $rating-scale__height;
+}

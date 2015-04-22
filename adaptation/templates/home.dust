@@ -25,7 +25,11 @@
     </div>
 
     <p>
-        {@c-rating-scale ratingTotal=75 /}
+        {! {@c-rating-scale ratingTotal=75 /} !}
+    </p>
+
+    <p>
+        {@c-product-tile ctx=product /}
     </p>
 {/contentBlock}
 

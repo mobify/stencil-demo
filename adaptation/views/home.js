@@ -11,6 +11,14 @@ function($, BaseView, template) {
             templateName: 'home',
             firstp: function() {
                 return $('p').first().text() || 'Could not find the first paragraph text in your page';
+            },
+            product: {
+                title: 'Product Name',
+                photo: {
+                    src: 'http://placehold.it/400x520',
+                    alt: 'Product Name'
+                },
+                regularPrice: '$18.99'
             }
         }
 

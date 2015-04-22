@@ -10,6 +10,7 @@
     "modularized-normalize-scss": "3.0.2",
     "zeptojs": "1.1.6",
     "stencil-select": "mobify/stencil-select#dev",
-    "stencil-rating-scale": "mobify/stencil-star-rating#dev"
+    "stencil-rating-scale": "mobify/stencil-star-rating#dev",
+    "stencil-product-tile": "mobify/stencil-product-tile"
   }
 }
