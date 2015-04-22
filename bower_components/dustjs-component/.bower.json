@@ -1,0 +1,45 @@
+{
+  "name": "dustjs-component",
+  "description": "Encapsulated, composable components in Dust",
+  "authors": [
+    "Ryan Frederick <ryan@ryanfrederick.com>"
+  ],
+  "keywords": [
+    "dust",
+    "components",
+    "helper"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobify/dustjs-helper-component.git"
+  },
+  "main": "index.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "dustjs-linkedin": "2.3.3"
+  },
+  "homepage": "https://github.com/mobify/dustjs-helper-component",
+  "_release": "fb9548f47a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "adaptive-compat",
+    "commit": "fb9548f47adc513636e1baea7762d2e07105849d"
+  },
+  "_source": "git://github.com/mobify/dustjs-helper-component.git",
+  "_target": "adaptive-compat",
+  "_originalSource": "mobify/dustjs-helper-component"
+}

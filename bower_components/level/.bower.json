@@ -1,0 +1,21 @@
+{
+  "name": "level",
+  "version": "0.0.1",
+  "main": "level.scss",
+  "author": "Mobify",
+  "ignore": [
+    "CHANGELOG.md",
+    "package.json",
+    "test.html"
+  ],
+  "homepage": "https://github.com/mobify/level",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "c7a2a15a960fed115b7fa8b617a9293f8c7bdd49"
+  },
+  "_source": "git://github.com/mobify/level.git",
+  "_target": "~0.0.1",
+  "_originalSource": "mobify/level"
+}

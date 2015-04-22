@@ -1,0 +1,131 @@
+// Select
+// ===
+
+
+// Dependencies
+// ---
+
+@import 'spline/dist/utilities/triangle';
+@import 'stencil-variables/src/style';
+@import 'level/level';
+
+
+// Configurable Variables
+// ---
+
+// Draw the down-arrow caret? Set false to draw your own.
+$select__draw-caret: true !default;
+
+
+// Select Root
+// ---
+
+.c-select {
+    position: relative; // Allow positioning of select element and caret
+
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: $tap-size;
+    border: $border;
+
+    border-radius: $border-radius;
+    background: $input-background-color;
+
+    font-family: $font-family;
+
+    user-select: none;
+
+
+    // Caret
+    // ---
+
+    @if ($select__draw-caret) {
+        &::after {
+            @include triangle(
+                $type: 'triangle',
+                $direction: 'down',
+                $size: 7px,
+                $color: $border-color
+            );
+
+            content: '';
+
+            position: absolute;
+            top: 0;
+            right: $input-horizontal-padding;
+            bottom: 0;
+
+            margin: auto; // Vertically center the caret
+        }
+    }
+
+    // Select element
+    // ---
+
+    select {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        padding-right: $input-horizontal-padding;
+        padding-left: $input-horizontal-padding;
+        border: 0;
+
+        background: none;
+
+        -webkit-appearance: none;
+    }
+}
+
+// Select with Inner Label
+// ---
+
+.c-select.c--inner-label {
+    display: flex;
+    align-items: center; // vertically align inner label and value
+    padding-right: $input-horizontal-padding * 3; // padding for caret
+
+    select {
+        opacity: 0;
+    }
+}
+
+.c-select__label {
+    display: block;
+    margin: 0 $unit;
+
+    color: $neutral-70;
+}
+
+.c-select__value {
+    display: block;
+    overflow: hidden;
+    flex: 1;
+    padding-right: $input-horizontal-padding * 3; // padding for ellipsis
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: lowercase;
+}
+
+
+// Hide the native select arrow in Firefox by clipping it with overflow: hidden
+// Attribution: http://filamentgroup.github.io/select-css/
+
+@-moz-document url-prefix() {
+    .c-select {
+        overflow: hidden;
+
+        select {
+            width: calc(100% + 3em);
+
+            &:-moz-focusring {
+                color: transparent;
+                text-shadow: 0 0 0 #000;
+            }
+        }
+    }
+}

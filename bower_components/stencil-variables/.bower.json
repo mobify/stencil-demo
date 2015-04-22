@@ -1,0 +1,39 @@
+{
+  "name": "stencil-variables",
+  "description": "Default variables for all Stencil components",
+  "authors": [
+    "Mobify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mobify/stencil-variables.git"
+  },
+  "keywords": [
+    "mobify",
+    "components",
+    "patterns"
+  ],
+  "license": "MIT",
+  "main": [
+    "src/_style.scss"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "Gruntfile.js",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/ry5n/stencil-variables",
+  "_release": "b41dac790c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b41dac790c914de2da426588b684aa3e165d73b7"
+  },
+  "_source": "git://github.com/ry5n/stencil-variables.git",
+  "_target": "*",
+  "_originalSource": "ry5n/stencil-variables"
+}

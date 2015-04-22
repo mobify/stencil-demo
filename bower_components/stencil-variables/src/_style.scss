@@ -1,0 +1,69 @@
+// Variables
+// ===
+//
+// Guidelines:
+//
+// - Names should be lowercase and dash-separated;
+// - Related variables should add qualifiers at the beginning: use
+//   `$small-font-size`, not `$font-size-small`;
+// - Numeric scales should use increments of 10; these numbers are arbitrary and
+//   should not map to actual values. If really necessary, additional values can
+//   be added in between, e.g. $neutral-15 between 10 and 20.
+
+
+// Layout
+// ---
+
+// Basic unit for spacing and alignment of elements. Suggested value: 6 to 12px.
+// Apply in whole or half multiples.
+$unit: 10px !default;
+
+// Minimum tap-target size
+$tap-size: 45px !default;
+
+
+// Typography
+// ---
+
+$font-family: sans-serif !default;
+$font-size: 14px !default;
+$line-height: 20px !default;
+
+
+// Color palette
+// ---
+
+$neutral-30: hsl(0, 0%, 94%) !default;  // Background shade
+$neutral-40: hsl(0, 0%, 76%) !default;  // Borders
+$neutral-50: hsl(0, 0%, 60%) !default;  // Icons & placeholder text
+$neutral-60: hsl(0, 0%, 45%) !default;  // Light text
+$neutral-70: hsl(0, 0%, 15%) !default;  // Text
+
+$success-color: hsl(145, 63%, 42%) !default;
+$error-color: hsl(6, 63%, 46%) !default;
+
+
+// Appearance
+// ---
+
+$link-color: hsl(210, 90%, 53%) !default;
+
+$border-color: $neutral-40 !default;
+$border-radius: 0 !default;
+$border: 1px solid $border-color !default;
+
+$input-border-color: $neutral-40 !default;
+$input-background-color: hsl(0, 0%, 100%) !default;
+$input-focus-outline-color: hsl(210, 90%, 60%) !default;
+$input-horizontal-padding: $unit;
+$input-vertical-padding: $unit;
+
+
+// Layer (z-index)
+// ---
+
+$layer-10: 1 !default;
+$layer-20: 10 !default;
+$layer-30: 100 !default;
+$layer-40: 1000 !default;
+
