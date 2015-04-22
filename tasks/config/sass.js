@@ -1,15 +1,20 @@
 
 module.exports = function(grunt) {
     return {
+        options: {
+            bundleExec: true,
+            loadPath: [
+                './',
+                'bower_components/'
+            ],
+            require: [
+                'compass/import-once/activate'
+            ]
+        },
         prod: {
             options: {
-                bundleExec: true,
                 style: 'compressed',
-                sourcemap: 'none',
-                loadPath: [
-                    './',
-                    'bower_components/'
-                ]
+                sourcemap: 'none'
             },
             files: [
                 {
@@ -23,13 +28,8 @@ module.exports = function(grunt) {
         },
         dev: {
             options: {
-                bundleExec: true,
                 style: 'expanded',
-                sourcemap: 'auto',
-                loadPath: [
-                    './',
-                    'bower_components/'
-                ]
+                sourcemap: 'auto'
             },
             files: [
                 {
