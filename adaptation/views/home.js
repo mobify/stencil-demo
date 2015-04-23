@@ -9,16 +9,15 @@ function($, BaseView, template) {
         extend: BaseView,
         context: {
             templateName: 'home',
-            firstp: function() {
-                return $('p').first().text() || 'Could not find the first paragraph text in your page';
-            },
+            title: 'Cooking & Baking',
+            firstp: 'If you are a budding baker, you can enjoy making your favourite cakes and recipes with cake tins and pans as well as all the accessories you need. View our Great British Bakeware range for the world’s leading manufacturer of superior bakeware.',
             product: {
-                title: 'Product Name',
+                title: 'Wooden Chopping Board',
                 photo: {
                     src: 'http://placehold.it/400x520',
-                    alt: 'Product Name'
+                    alt: 'Wooden Chopping Board'
                 },
-                regularPrice: '$18.99',
+                regularPrice: '$12.99',
                 gridClass: 'c-grid__span'
             }
         }
