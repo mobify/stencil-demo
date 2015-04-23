@@ -17,10 +17,9 @@
     {/c-select}
 
     <div class="c-grid c--2up c--gutters">
-        {@c-product-tile ctx=product /}
-        {@c-product-tile ctx=product /}
-        {@c-product-tile ctx=product /}
-        {@c-product-tile ctx=product /}
+        {#product}
+            {@c-product-tile title=title photo=photo regularPrice=regularPrice salePrice=salePrice gridClass=gridClass /}
+        {/product}
     </div>
 
 
