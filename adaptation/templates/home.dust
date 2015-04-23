@@ -6,24 +6,6 @@
         {firstp}
     </p>
 
-    <div id="HAPPY">
-        {@c-select id="foo" name="foo"}
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-        {/c-select}
-    </div>
-
-    <div id="HAPPIER">
-        {@c-select id="foo-2" name="foo-2" label="Foo:"}
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-        {/c-select}
-    </div>
-
     <p>
         {! {@c-rating-scale ratingTotal=75 /} !}
     </p>
@@ -31,6 +13,8 @@
     <p>
         {@c-product-tile ctx=product /}
     </p>
+
+    <div id="target"></div>
 {/contentBlock}
 
 {<uiScripts}
