@@ -5,4 +5,42 @@
     p {
         margin: $v-space 0;
     }
+
+    .c-select {
+        margin-bottom: $v-space;
+    }
+
+    .c-select__label {
+        padding-bottom: 1px; // Align baseline of bolded text
+    }
+
+    .c-grid {
+        padding-top: $v-space;
+        margin-bottom: $v-space;
+    }
+
+    .c-product-tile {
+        .c-rating-scale {
+            margin-bottom: $v-space;
+        }
+    }
+
+    .c-product-tile__title {
+        margin-bottom: $v-space;
+        font-size: 18px;
+    }
+
+    .c-product-tile__price {
+        padding-right: 0;
+        font-size: 16px;
+
+        &.c--sale {
+            color: $error-color;
+        }
+
+        &.c--was {
+            font-size: $font-size;
+            text-decoration: line-through;
+        }
+    }
 }

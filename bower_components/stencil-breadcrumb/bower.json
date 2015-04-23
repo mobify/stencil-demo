@@ -1,12 +1,13 @@
 {
-  "name": "stencil-select",
-  "description": "A styleable, accessible <select> component",
+  "name": "stencil-breadcrumb",
+  "version": "0.0.0",
+  "description": "A styleable, accessible breadcrumb component",
   "authors": [
     "Mobify"
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/mobify/stencil-select.git"
+    "url": "http://github.com/mobify/stencil-breadcrumb.git"
   },
   "keywords": [
     "mobify",
@@ -15,9 +16,9 @@
   ],
   "license": "MIT",
   "main": [
-    "select.component.js",
-    "select.schema.js",
-    "select.scss"
+    "breadcrumb.component.js",
+    "breadcrumb.schema.js",
+    "breadcrumb.scss"
   ],
   "ignore": [
     ".editorconfig",
@@ -36,15 +37,5 @@
     "stencil-spec": "ry5n/stencil-spec#dust",
     "requirejs": "^2.1.0",
     "text": "^2.0.0"
-  },
-  "homepage": "https://github.com/mobify/stencil-select",
-  "_release": "71415f460d",
-  "_resolution": {
-    "type": "branch",
-    "branch": "dev",
-    "commit": "71415f460d9e6698cce26dfe82b3eb7733d5f3ec"
-  },
-  "_source": "git://github.com/mobify/stencil-select.git",
-  "_target": "dev",
-  "_originalSource": "mobify/stencil-select"
+  }
 }
