@@ -8,6 +8,14 @@
 
     <p>{firstp}</p>
 
+    {@c-select id="bar" name="bar" label="Sort by"}
+        <option value="1">Price: High to Low</option>
+        <option value="2">Price: Low to High</option>
+        <option value="3">New Arrivals</option>
+        <option value="4">Rating</option>
+        <option value="5">Best Selling</option>
+    {/c-select}
+
     <div class="c-grid c--2up c--gutters">
         {@c-product-tile ctx=product /}
         {@c-product-tile ctx=product /}

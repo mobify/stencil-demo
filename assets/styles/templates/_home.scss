@@ -5,4 +5,17 @@
     p {
         margin: $v-space 0;
     }
+
+    .c-select {
+        margin-bottom: $v-space;
+    }
+
+    .c-select__label {
+        padding-bottom: 1px; // Align baseline of bolded text
+    }
+
+    .c-grid {
+        padding-top: $v-space;
+        margin-bottom: $v-space;
+    }
 }
