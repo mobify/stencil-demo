@@ -18,7 +18,8 @@ function($, BaseView, template) {
                     src: 'http://placehold.it/400x520',
                     alt: 'Product Name'
                 },
-                regularPrice: '$18.99'
+                regularPrice: '$18.99',
+                gridClass: 'c-grid__span'
             }
         }
 
