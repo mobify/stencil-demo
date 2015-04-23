@@ -12,6 +12,7 @@
     "stencil-select": "mobify/stencil-select#dev",
     "stencil-rating-scale": "mobify/stencil-star-rating#dev",
     "stencil-product-tile": "mobify/stencil-product-tile#dev",
-    "stencil-icon": "mobify/stencil-icon#dev"
+    "stencil-icon": "mobify/stencil-icon#dev",
+    "stencil-breadcrumb": "mobify/stencil-breadcrumb#dev"
   }
 }

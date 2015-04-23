@@ -1,6 +1,9 @@
 {>"templates/base"/}
 
 {<contentBlock}
+
+    {@c-breadcrumb items=breadcrumbs /}
+
     <h1>{title}</h1>
 
     <p>{firstp}</p>

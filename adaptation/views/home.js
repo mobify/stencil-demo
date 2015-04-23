@@ -19,7 +19,25 @@ function($, BaseView, template) {
                 },
                 regularPrice: '$12.99',
                 gridClass: 'c-grid__span'
-            }
+            },
+            breadcrumbs: [
+                {
+                    label: 'Home',
+                    url: '#'
+                },
+                {
+                    label: 'Homeware',
+                    url: '#'
+                },
+                {
+                    label: 'Kitchen',
+                    url: '#'
+                },
+                {
+                    label: 'Cooking & Baking',
+                    class: 'c--current'
+                }
+            ]
         }
 
         /**
