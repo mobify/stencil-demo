@@ -10,9 +10,13 @@
         {! {@c-rating-scale ratingTotal=75 /} !}
     </p>
 
-    <p>
+    <div class="c-grid c--2up c--gutters">
         {@c-product-tile ctx=product /}
-    </p>
+        {@c-product-tile ctx=product /}
+        {@c-product-tile ctx=product /}
+        {@c-product-tile ctx=product /}
+    </div>
+
 
     <div id="target"></div>
 {/contentBlock}
@@ -28,4 +32,3 @@
     })(Adaptive.AMD.require);
     </script>
 {/uiScripts}
-
