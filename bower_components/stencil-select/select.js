@@ -1,10 +1,22 @@
 define(function() {
-    var init = function() {
-        $('body').on('change', '.c-select', function() {
-            var $container = $(this);
-            var value = $container.find('option:selected').text();
+    var updateSelect = function($select) {
+        var value = $select.find('option:selected').text();
+        $select.find('.c-select__value').text(value);
+    };
 
-            $container.find('.c-select__value').text(value);
+    var init = function() {
+        $('.c-select').each(function() {
+            var $this = $(this);
+
+            if (!$this.is('.initialized')) {
+                updateSelect($this);
+                $this.addClass('initialized');
+            }
+        });
+
+        $('body').on('change', '.c-select', function() {
+            var $select = $(this);
+            updateSelect($select);
         });
     };
 
