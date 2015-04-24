@@ -8,7 +8,7 @@
         </div>
     </li>
 {:else}
-    <li>
-        <a class="c-main-menu__link" href="{href}">{label}</a>
+    <li class="c-main-menu__link">
+        <a href="{href}">{label}</a>
     </li>
 {/items}
