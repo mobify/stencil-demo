@@ -26,9 +26,8 @@
 
 <script>
     (function(require) {
-        require(['sheet-left'], function(sheetLeft) {
-            console.log('instantiating the shiz');
-
+        require(['stencil-main-menu'], function(mainMenu) {
+            mainMenu.init();
         });
     })(Adaptive.AMD.require);
 </script>

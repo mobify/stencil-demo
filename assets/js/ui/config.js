@@ -5,6 +5,7 @@ require.config({
         'stencil-ui': '../../../stencil-ui',
         'stencil-select': '../../../bower_components/stencil-select/select',
         'stencil-rating-scale': '../../../bower_components/stencil-rating-scale/rating-scale',
+        'stencil-main-menu': '../../../bower_components/stencil-main-menu/main-menu',
         'libs': '../../../bower_components',
         'plugin': '../../../bower_components/plugin/dist/plugin',
         'velocity': '../../../bower_components/mobify-velocity/velocity',
