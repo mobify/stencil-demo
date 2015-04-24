@@ -1,0 +1,98 @@
+// Main Menu Component
+// ===
+//
+
+.c-main-menu {
+    .pinny__header {
+        padding: $h-space $v-space;
+
+        border-bottom: none;
+    }
+
+    .pinny__content {
+        padding: 0;
+    }
+
+    .bellows__content {
+        padding: 0;
+        border: none;
+
+        .c-main-menu__level {
+            margin-top: 0;
+        }
+    }
+
+    .c-main-menu__link {
+        display: block;
+        padding: $h-space/2 15px;
+
+        &:first-child {
+            padding-top: $h-space;
+        }
+
+        &:last-child {
+            padding-bottom: $h-space;
+        }
+
+        a {
+            color: $grey-50;
+        }
+
+    }
+
+    // First Level
+
+    .c-main-menu__level {
+        .bellows__header {
+            background-color: #0F76AD;
+            font-size: 18px;
+            border-bottom: 1px solid #09527A;
+        }
+
+        .bellows__content {
+            background-color: #87BCD5;
+        }
+    }
+
+    // Second Level
+    .c-main-menu__level .c-main-menu__level {
+
+        .bellows__header {
+            background-color: #10A9B7;
+            border-bottom: 1px solid #0A7681;
+            padding-left: 30px;
+        }
+
+        .bellows__content {
+            background-color: #88D6DA;
+            padding-bottom: 1px;
+
+            .c-main-menu__link {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    // Third Level
+    .c-main-menu__level .c-main-menu__level .c-main-menu__level {
+
+        .bellows__item {
+            border-top: 1px solid #10B767;
+            border-bottom: 1px solid #10B767;
+        }
+
+        .bellows__header {
+            background-color: #10B767;
+            border-bottom: 1px solid #0A8149;
+            padding-left: 45px;
+        }
+
+        .bellows__content {
+            background-color: #88DAB2;
+
+            .c-main-menu__link {
+                padding-left: 45px;
+            }
+        }
+    }
+}

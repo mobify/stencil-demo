@@ -14,6 +14,7 @@
     "stencil-product-tile": "mobify/stencil-product-tile#dev",
     "stencil-icon": "mobify/stencil-icon#dev",
     "stencil-breadcrumb": "mobify/stencil-breadcrumb#dev",
-    "stencil-main-menu": "mobify/stencil-main-menu#master"
+    "stencil-main-menu": "mobify/stencil-main-menu#master",
+    "stencil-input-inline-btn": "mobify/stencil-input-inline-btn#dev"
   }
 }

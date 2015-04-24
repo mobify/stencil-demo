@@ -24,7 +24,8 @@
     ".gitignore",
     "package.json",
     "Gruntfile.js",
-    "tests"
+    "tests",
+    "input-inline-btn.template.js"
   ],
   "dependencies": {
     "level": "mobify/level#~0.0.1",
@@ -38,13 +39,14 @@
     "text": "^2.0.0"
   },
   "homepage": "https://github.com/mobify/stencil-input-inline-btn",
-  "_release": "b547a7d232",
+  "_release": "a1d8ba7ca0",
   "_resolution": {
     "type": "branch",
     "branch": "dev",
-    "commit": "b547a7d232512cfe141f009d2c4b0eba2e527578"
+    "commit": "a1d8ba7ca09f1da5910a9d408877169be97448d2"
   },
   "_source": "git://github.com/mobify/stencil-input-inline-btn.git",
   "_target": "dev",
-  "_originalSource": "mobify/stencil-input-inline-btn"
+  "_originalSource": "mobify/stencil-input-inline-btn",
+  "_direct": true
 }
