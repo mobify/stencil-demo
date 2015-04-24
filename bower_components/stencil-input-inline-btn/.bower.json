@@ -1,0 +1,50 @@
+{
+  "name": "stencil-input-inline-btn",
+  "description": "A styleable, accessible <select> component",
+  "authors": [
+    "Mobify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mobify/stencilinput-inline-btn.git"
+  },
+  "keywords": [
+    "mobify",
+    "components",
+    "patterns"
+  ],
+  "license": "MIT",
+  "main": [
+    "select.component.js",
+    "select.schema.js",
+    "select.scss"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "Gruntfile.js",
+    "tests"
+  ],
+  "dependencies": {
+    "level": "mobify/level#~0.0.1",
+    "stencil-variables": "ry5n/stencil-variables",
+    "dustjs-component": "mobify/dustjs-helper-component#adaptive-compat",
+    "spline": "~1.0.1"
+  },
+  "devDependencies": {
+    "stencil-spec": "ry5n/stencil-spec#dust",
+    "requirejs": "^2.1.0",
+    "text": "^2.0.0"
+  },
+  "homepage": "https://github.com/mobify/stencil-input-inline-btn",
+  "_release": "b547a7d232",
+  "_resolution": {
+    "type": "branch",
+    "branch": "dev",
+    "commit": "b547a7d232512cfe141f009d2c4b0eba2e527578"
+  },
+  "_source": "git://github.com/mobify/stencil-input-inline-btn.git",
+  "_target": "dev",
+  "_originalSource": "mobify/stencil-input-inline-btn"
+}

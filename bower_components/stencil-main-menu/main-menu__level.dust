@@ -1,0 +1,9 @@
+<ul class="c-main-menu__level bellows">
+    {?body}
+        {body}
+    {:else}
+        {#items}
+            {@c-main-menu__item ctx=. /}
+        {/items}
+    {/body}
+</ul>

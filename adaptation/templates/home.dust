@@ -1,6 +1,7 @@
 {>"templates/base"/}
 
 {<contentBlock}
+    {@c-main-menu items=menuItems /}
 
     {@c-breadcrumb items=breadcrumbs /}
 

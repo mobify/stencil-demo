@@ -1,0 +1,28 @@
+// Stencil Main Menu
+// ===
+
+
+// Configurable variables
+// ---
+
+$main-menu__example: some-value;
+
+
+// Dependencies
+// ---
+
+@import 'stencil-variables/src/style';
+@import 'stencil-input-inline-btn/input-inline-btn';
+@import 'level/level';
+
+
+// Main Menu
+// ---
+
+.c-main-menu {}
+
+.c-main-menu__level {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
