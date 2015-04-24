@@ -59,8 +59,6 @@
                     {body|innerHTML|s}
                 {/contentBlock}
             </main>
-
-            {>"templates/partials/_footer"/}
         </div>
     {/bodyBlock}
     {+scripts}

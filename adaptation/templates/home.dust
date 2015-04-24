@@ -22,9 +22,6 @@
             {@c-product-tile title=title photo=photo regularPrice=regularPrice salePrice=salePrice gridClass=gridClass /}
         {/product}
     </div>
-
-
-    <div id="target"></div>
 {/contentBlock}
 
 {<uiScripts}
