@@ -62,7 +62,7 @@ function($, ResizeImages, Utils, Defaults, header, footer, template, Settings) {
         postProcess: function(context) {
             // Transforms should take place here rather then within `context`.
             // An example of a DOM transform:
-            context.desktopScripts = $('script').remove();
+            $('script').remove();
 
             // Uncomment the following line to use Mobify's image resizer:
             // resizeImages();
